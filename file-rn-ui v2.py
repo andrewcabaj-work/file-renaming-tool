@@ -8,7 +8,7 @@ root = tk.Tk()
 root.title("File Renaming Tool")
 
 def call_renaming_script(script, directory_path, string):
-    script_folder = r"C:\Users\andrew.cabaj\py\projects\02_file-rn"  # Static script folder location
+    script_folder = r"C:\Users\andrew.cabaj\GitHub\file-renaming-tool"  # Static script folder location
     os.chdir(script_folder)
     subprocess.run(['python', script, directory_path, string], check=True)
 
@@ -27,16 +27,16 @@ def start_renaming_thread(script, directory_path, string):
 def handle_prefix_operation(operation_type, string):
     directory_path = folder_path_entry.get()
     if operation_type == "add":
-        start_renaming_thread('file-rn-pre-add-2.py', directory_path, string)
+        start_renaming_thread('file-rn-pre-add v2.py', directory_path, string)
     elif operation_type == "sub":
-        start_renaming_thread('file-rn-pre-sub-2.py', directory_path, string)
+        start_renaming_thread('file-rn-pre-sub v2.py', directory_path, string)
 
 def handle_suffix_operation(operation_type, string):
     directory_path = folder_path_entry.get()
     if operation_type == "add":
-        start_renaming_thread('file-rn-post-add-2.py', directory_path, string)
+        start_renaming_thread('file-rn-post-add v2.py', directory_path, string)
     elif operation_type == "sub":
-        start_renaming_thread('file-rn-post-sub-2.py', directory_path, string)
+        start_renaming_thread('file-rn-post-sub v2.py', directory_path, string)
 
 folder_label = tk.Label(root, text="PATH", font=('Helvetica', 8, 'bold'))
 folder_label.grid(row=0, column=0, sticky='W', padx=5, pady=(5,0))
