@@ -4,7 +4,7 @@ To specify the folder, either copy its path or browse via file explorer. <br/>
 Prefix inserts/removes text to or from the beginning. </br>
 Suffix inserts/removes text to or from the end without disturbing the file extension. </br>
 
-![UI Example](ui.png?raw=true "UI Example") <br/> <br/> 
+![UI Example](ui.png?raw=true "UI Example") <br/>
 
 Next version should be able do the following:
 - Add strings within the filename (based on the number of characters from beginning or end)
