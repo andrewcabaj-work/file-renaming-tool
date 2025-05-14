@@ -9,7 +9,7 @@ root.title("File Renaming Tool")
 
 # Function to call renaming script
 def call_renaming_script(script, *args):
-    script_folder = r"C:\Users\Andrew.Cabaj\Documents\python-projects\general-utilities\file-renaming\versions\v3"  # Static script folder location
+    script_folder = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_folder)
     subprocess.run(['python', script, *args], check=True)
 
